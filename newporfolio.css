@@ -209,12 +209,16 @@ header{
     border-radius: 50%;
     box-shadow: 0 0 20px #fff;
     overflow: hidden;
+    animation: rotation 2s ease 1s 2 alternate-reverse forwards;
 }
 
-.img-box:hover{
-    transform: rotateY('360deg');
-    transition: 2s;
+
+@keyframes rotation{
+    100%{
+        transform: rotateY(360deg);
+    }
 }
+
 
 .img-size{
     position: absolute;
@@ -223,10 +227,7 @@ header{
     object-fit: cover;
 }
 
-.img-size:hover{
-    transform: rotateY('360deg');
-    transition: 2s;
-}
+
 
  h2{
     text-shadow: 0 0 20px #04f5fd;
