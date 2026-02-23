@@ -223,6 +223,11 @@ header{
     object-fit: cover;
 }
 
+.img-size:hover{
+    transform: rotateY('360deg');
+    transition: 2s;
+}
+
  h2{
     text-shadow: 0 0 20px #04f5fd;
 }
