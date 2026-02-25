@@ -61,7 +61,7 @@ header{
 }
 
 .logo1{
-    font-size: 25px;
+    font-size: 2.5vw;
     color: #FFF;
     text-decoration: none;
     font-weight: 400;
@@ -75,7 +75,7 @@ header{
 }
 
 .logo1:hover{
-    font-size: 25px;
+    font-size: 2.5vw;
     color: #aeeb05;
     text-decoration: none;
     font-weight: 400;
@@ -103,9 +103,13 @@ header{
     padding-right: 20px;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
 
 .navbar a {
-    font-size: 18px;
+    font-size: calc(1.5vw + 5px) ;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -132,7 +136,6 @@ header{
 }
 
 .home-detail{
-    
     width: 60%;
 }
 
@@ -205,8 +208,8 @@ header{
 
 .img-box{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 40.0vh;
+    height: 40.0vh;
     border: solid 2px #fff;
     border-radius: 50%;
     box-shadow: 0 0 20px #fff;
@@ -225,15 +228,18 @@ header{
 .img-size{
     position: absolute;
     bottom: 0.1px;
-    width: 600px;
+    width: 140%;
     object-fit: cover;
 }
-
-
 
  h2{
     text-shadow: 0 0 20px #04f5fd;
 }
 
-
+@media (max-width=894px){
+    .home{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
 
