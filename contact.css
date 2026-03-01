@@ -76,7 +76,6 @@ header{
 
 .logo1:hover{
     font-size: 25px;
-    color: #aeeb05;
     text-decoration: none;
     font-weight: 400;
     border-color: #333;
@@ -145,4 +144,30 @@ header{
 #span1{
     text-shadow: 0 0 20px #04f5fd;
 }
+
+.lien_contact{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+    border: #fff 1px solid ;
+    box-shadow: 5px 5px 5px #464242 ;
+    border-radius: 16px;
+    background-color: #1b08ce;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.lien_contact:hover{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+    border: #fff 1px solid ;
+    box-shadow: none;
+    border-radius: 16px;
+    background: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+}
+
 

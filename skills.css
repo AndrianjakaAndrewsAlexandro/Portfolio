@@ -74,7 +74,6 @@ header{
 
 .logo1:hover{
     font-size: 25px;
-    color: #aeeb05;
     text-decoration: none;
     font-weight: 400;
     border-color: #333;
@@ -112,32 +111,50 @@ header{
 }
 
 .home-detail{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     size: 60%;
+    gap: 185px;
+    margin-left: 85px;
+    margin-right: 85px;
 }
 
 .home-detail li {
     margin: 10px 0 20px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .home-detail download-social {
     display: flex;
+    
     align-items: center;
 }
 
 .logo2{
     font-size: 25px;
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
     font-weight: 400;
     border-color: #333;
-    border-radius: 45px;
-    border: solid 2px;
-    box-shadow: #44F;
+    border-radius: 16px;
+    border: solid blue 2px;
+    box-shadow: 0 0 20px #04f5fd;
     padding-left: 20px;
     padding-right: 20px;
+}
 
+.logo2:hover{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    border-color: #333;
+    border-radius: 16px;
+    border: solid blue 2px;
+    box-shadow: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h2{
