@@ -184,6 +184,7 @@ header{
     
 }
 
+/*contenaire de l'image*/
 .img-box{
     position: relative;
     width: 40.0vh;
@@ -195,25 +196,27 @@ header{
     animation: rotation 2s ease 1s 2 alternate-reverse forwards;
 }
 
-
+/*animation du contenaire de l'image*/
 @keyframes rotation{
     100%{
         transform: rotateY(360deg);
     }
 }
 
-
+/*taille de l'image*/
 .img-size{
     position: absolute;
-    bottom: 0.1px;
-    width: 140%;
+    top: 0.1px;
+    width: 100%;
     object-fit: cover;
 }
 
+/* le titre "web developper*/
  h2{
     text-shadow: 0 0 20px #04f5fd;
 }
 
+/*Taille responsive du corps*/
 @media screen and (max-width:894px){
     .home{
         margin-top: 40px;
@@ -221,3 +224,29 @@ header{
     }
 }
 
+
+/*MODE SOMBRE*/
+/* Couleurs par défaut (Mode Clair) */
+/*:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007bff;
+}*/
+
+/* Couleurs quand la classe .dark-theme est active */
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #12abda;
+  --accent-color: #ffcc00;
+}
+
+/* Appliquer les variables aux éléments */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s; /* Pour une transition douce */
+}
+
+button {
+  background-color: var(--accent-color);
+}

@@ -112,9 +112,16 @@ header{
 
 }
 
+/*corps du texte*/
 .home-detail{
-    
     size: 60%;
+    border: #FFF solid 2px;
+    border-radius: 16px;
+    padding: 30px;
+}
+.home-detail:hover{
+    color: #12abda;
+    background-color: #FFF;
 }
 
 .home-detail p {
@@ -125,6 +132,9 @@ header{
 .home-detail download-social {
     display: flex;
     align-items: center;
+}
+.download-social a{
+    color: #000;
 }
 
 .logo2{

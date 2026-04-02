@@ -112,19 +112,31 @@ header{
 
 }
 
+/*container de contenu texte*/
 .home-detail{
-    
     size: 60%;
+    border: #FFF solid 2px;
+    border-radius: 16px;
+    padding: 30px;
+}
+.home-detail:hover{
+    color: #12abda;
+    background-color: #FFF;
 }
 
 .home-detail li {
     margin: 10px 0 20px;
     font-size: 25px;
+    list-style-type: none;
 }
 
 .home-detail download-social {
     display: flex;
     align-items: center;
+}
+
+.download-social a{
+    color: black;
 }
 
 .logo2{
@@ -145,29 +157,63 @@ header{
     text-shadow: 0 0 20px #04f5fd;
 }
 
-.lien_contact{
-    text-decoration: none;
-    font-size: 18px;
-    color: #FFF;
-    border: #fff 1px solid ;
-    box-shadow: 5px 5px 5px #464242 ;
-    border-radius: 16px;
-    background-color: #1b08ce;
-    padding-left: 8px;
-    padding-right: 8px;
+.social-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f2f5; /* Fond léger pour faire ressortir les icônes */
+  border-radius: 16px;
+  width: 20vw;
+  
 }
 
-.lien_contact:hover{
-    text-decoration: none;
-    font-size: 18px;
-    color: #FFF;
-    border: #fff 1px solid ;
-    box-shadow: none;
-    border-radius: 16px;
-    background: none;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 20px;
+.social-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
+
+.social-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #555; /* Couleur grise par défaut */
+  transition: all 0.3s ease;
+}
+
+/* Effets au survol (Hover) */
+
+.social-icon:hover {
+  transform: translateY(-5px); /* Petit saut vers le haut */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Couleurs spécifiques au survol */
+
+/* Facebook */
+.facebook:hover { background-color: #1877F2; }
+.facebook:hover svg { fill: white; }
+
+/* Instagram - Utilise un dégradé Linéaire */
+.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.instagram:hover svg { fill: white; }
+
+/* Whatsapp */
+.whatsapp:hover { background-color: #25D366; }
+.whatsapp:hover svg { fill: white; }
+
+
+
+
 
 
