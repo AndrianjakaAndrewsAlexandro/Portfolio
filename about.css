@@ -118,6 +118,7 @@ header{
     border: #FFF solid 2px;
     border-radius: 16px;
     padding: 30px;
+    width: 80vw;
 }
 .home-detail:hover{
     color: #12abda;
