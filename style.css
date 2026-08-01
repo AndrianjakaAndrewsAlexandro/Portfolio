@@ -100,6 +100,13 @@ header{
     transform: scale(1.1);
 }
 
+.Acceuil.active, .propos.active, .competences.active, .projets.active, .contact.active{
+    background-color: var(--accent-principal-night);
+    color: var(--text-principal-night);
+    box-shadow: 5px var(--accent-hover-night);
+}
+
+
 #hamburger{
     display: none;
     font-size: 40px;
@@ -357,7 +364,7 @@ ul{
     justify-content: center;
     gap: 1vw;
     padding: 5px;
-    margin: 0px;
+    margin-top: 2vw;
 }
 
 /*--------  Grid dans la section compétences*/
@@ -372,6 +379,12 @@ ul{
     background-color: var(--fond-secondaire-night);
     padding-bottom: 40px;
     height: 100%;
+    transition: 2s;
+}
+
+.grid-item:hover{
+    transform: scale(1.08);
+    transform: translateY(-30px);
 }
 
 .grid-item h2{
@@ -453,6 +466,11 @@ ul{
     border-radius: 1.6vw;
     align-content: center;
     align-items: center;
+    transition: 1.2s;
+}
+
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card img{
@@ -494,6 +512,12 @@ ul{
     border: 2px solid var(--accent-principal-night);
     border-radius: 1.6vw;
     gap: 1vw;
+    transition: 2s;
+}
+
+.andrews_alexandro:hover{
+    background-color: var(--fond-principal-night);
+    transform: scale(1.08);
 }
 
 .andrews_alexandro span{
@@ -515,7 +539,14 @@ ul{
     padding: 1.6vw;
     color: var(--text-secondaire-night);
     font-size: calc(1.2vw + 4px);
+    transition: 2s;
 }
+
+.decouverte:hover{
+    border-radius: 1.6vw;
+    border: 2px solid var(--accent-principal-night);
+}
+
 
 
 .ce_qui_m_anime, .mon_objectif{
@@ -529,7 +560,13 @@ ul{
     border: 2px solid var(--accent-principal-night);
     border-radius: 1.6vw;
     gap: 1vw;
+    transition: 2s;
 }
+
+.ce_qui_m_anime:hover, .mon_objectif:hover{
+    transform: translateY(-30px);
+}
+
 
 .ce_qui_m_anime span, .mon_objectif span{
     color: var(--accent-principal-night);
@@ -555,6 +592,8 @@ ul{
     background-color: var(--accent-principal-night);
 }
 
+
+/*---------------------------------------           SECTION CONTACT            -------------------------------------*/
 .section_contact{
     display: flex;
     flex-direction: column;
@@ -562,9 +601,6 @@ ul{
     justify-content: center;
     gap: 2vw;
 }
-
-/*---------------------------------------           SECTION CONTACT            -------------------------------------*/
-
 
 .section_contact small{
     color: var(--text-secondaire-night);
@@ -610,6 +646,7 @@ ul{
     gap: 1.2vw;
     background-color: var(--fond-secondaire-night);
     transform: 1s;
+    transition: 1.5s;
 }
 
 .info > div:hover{
