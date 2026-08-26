@@ -955,7 +955,7 @@ ul{
     }
 
     .projet_item_grid{
-        width: 70%;
+        width: 95%;
         margin: auto;
         height: 100%;
     }
@@ -969,7 +969,13 @@ ul{
     }
 
     .projet_button .code{
-        font-size: calc(0.8vw + 3px);
+        font-size: calc(0.8vw + 6px);
+        border-radius: 4px;
+    }
+
+    .projet_button .site{
+        font-size: calc(0.8vw + 6px);
+        border-radius: 4px;
     }
 
     .projet_item_grid{
