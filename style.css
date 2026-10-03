@@ -87,7 +87,7 @@ header{
     padding-inline: 1.0vw;
     padding-block: 0.4vw;
     text-decoration: none;
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(1.6vw + 8px);
     border-radius: 1.6vw;
     gap: 10px;
     transition: 1s;
@@ -257,10 +257,10 @@ picture{
     display: flex;
     justify-content: center;
     align-items: center;;
-    width: 24vw; 
-    height: 24vw;
+    width: 28vw; 
+    height: 28vw;
     border-radius: 50%;
-    border: var(--accent-principal-night) solid 4px;
+    border: var(--accent-principal-night) solid 8px;
     overflow: hidden;
     transition: 1s;
 }
@@ -285,14 +285,14 @@ picture:hover{
     height: 100%;
     width: 60%;
     border: 1px solid var(--fond-principal-night);
-    padding: 10px;
-    gap: 0.8vw;
+    padding: 4px;
+    gap: 2vw;
 }
 
 /*----------     Mon nom complet    ------------*/
 .name{
     color: var(--text-principal-night);
-    font-size: calc(1.8vw + 8px);
+    font-size: calc(2.1vw + 10px);
     width: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -306,13 +306,13 @@ picture:hover{
 }
 
 .article p{
-    color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    color: var(--text-principal-night);
+    font-size: calc(1.4vw + 10px);
 }
 
 .article .developpeur{
     color: var(--accent-principal-night);
-    font-size: calc(1.6vw + 6px);
+    font-size: calc(1.8vw + 10px);
 }
 
 .article div{
@@ -332,7 +332,7 @@ picture:hover{
     text-align: center;
     border: 1px solid var(--text-secondaire-night);
     color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(1.2vw + 10px);
     border-radius: 16px;
     cursor: pointer;
 }
@@ -353,18 +353,18 @@ ul{
     border-radius: 16px;
     text-align: center;
     margin-top: 2vw;
-    
+    font-size: calc(3.1vw + 10px);
 }
 
 /*-------   sections   ------*/
 .grid-container1{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 1vw;
-    padding: 5px;
     margin-top: 2vw;
+    margin-inline: 1vw;
 }
 
 /*--------  Grid dans la section compétences*/
@@ -382,19 +382,14 @@ ul{
     transition: 2s;
 }
 
-.grid-item:hover{
-    transform: scale(1.08);
-    transform: translateY(-30px);
-}
-
 .grid-item h2{
-    font-size: 22px;
+    font-size: 30px;
     color: var(--accent-principal-night);
 }
 
 .grid-item li{
     color: var(--text-secondaire-night);
-    font-size: 18px;
+    font-size: calc(1.2vw + 10px);
 }
 
 .diplome, .langues, .info_bureau, .languages {
@@ -497,7 +492,6 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 1vw;
-    
 }
 
 .andrews_alexandro{
@@ -522,13 +516,13 @@ ul{
 
 .andrews_alexandro span{
     color: var(--text-principal-night);
-    font-size: calc(1.8vw + 3px);
+    font-size: calc(1.8vw + 4px);
     font-weight: 600;
 }
 
 .andrews_alexandro p{
     color: var(--text-secondaire-night);
-    font-family: calc(1vw + 2px);
+    font-size: calc(1.6vw + 4px);
 }
 
 .decouverte{
@@ -537,8 +531,8 @@ ul{
     align-items: center;
     justify-content: center;
     padding: 1.6vw;
-    color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    color: var(--text-principal-night);
+    font-size: calc(1.8vw + 4px);
     transition: 2s;
 }
 
@@ -570,12 +564,12 @@ ul{
 
 .ce_qui_m_anime span, .mon_objectif span{
     color: var(--accent-principal-night);
-    font-size: calc(1.4vw + 4px);
+    font-size: calc(2.1vw + 4px);
 }
 
 .ce_qui_m_anime p, .mon_objectif p{
-    color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    color: var(--text-principal-night);
+    font-size: calc(1.8vw + 4px);
 }
 
 .section_propos_item a{
@@ -604,7 +598,7 @@ ul{
 
 .section_contact small{
     color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(2.1vw + 4px);
 }
 
 .division{
@@ -612,7 +606,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2vw;
+    gap: 4vw;
 }
 
 .info{
@@ -633,7 +627,7 @@ ul{
 
 .info i{
     color: var(--accent-principal-night);
-    font-size: 4vw;
+    font-size: calc(4vw + 8px);
 }
 
 .info > div{
@@ -651,16 +645,17 @@ ul{
 
 .info > div:hover{
     scale: 1.05;
+    border-color: var(--jaune);
 }
 
 .info a{
     color: var(--text-secondaire-night);
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(2.4vw + 8px);
     text-decoration: none;
 }
 
 .info span{
-    font-size: calc(1.4vw + 4px);
+    font-size: calc(2.8vw + 8px);
 }
 
 .lien{
@@ -670,13 +665,14 @@ ul{
     justify-content: center;
 }
 
-
 .lien span{
     color: var(--text-principal-night);
 }
+
+
 .formulaire{
-    width: 50vw;
-    padding: 1.2vw;
+    width: 90vw;
+    padding: 2vw;
     background-color: var(--fond-secondaire-night);
     border-radius: 2.1vw;
     border: 2px solid var(--text-secondaire-night);
@@ -688,35 +684,35 @@ ul{
 
 .formulaire legend{
     margin: auto;
-    font-size: calc(1.4vw + 4px);
+    font-size: calc(2.1vw + 8px);
     padding: 0.5vw;
     color: var(--jaune);
 }
 
 .formulaire input{
     width: 100%;
-    height: 4vw;
+    height: 8vw;
     background-color: var(--fond-secondaire-night);
     border: 2px solid var(--accent-principal-night);
     border-radius: 0.8vw;
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(2.1vw + 8px);
     padding: 0.8vw;
     color: var(--text-principal-night);
 }
 
 .formulaire textarea{
     width: 100%;
-    height: 10vw;
+    height: 40vw;
     background-color: var(--fond-secondaire-night);
     border: 2px solid var(--accent-principal-night);
     border-radius: 0.8vw;
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(2.1vw + 8px);
     padding: 0.8vw;
     color: var(--text-principal-night);
 }
 
 .formulaire label{
-    font-size: calc(1.2vw + 4px);
+    font-size: calc(2.6vw + 8px);
 }
 
 
@@ -726,7 +722,7 @@ ul{
     align-items: left;
     justify-content: center;
     gap: 1.2vw;
-    border-radius: 1.2vw;
+    border: none;
     padding: 1.2vw;
 }
 
@@ -745,8 +741,12 @@ ul{
     border-radius: 0.6vw;
 }
 
-.submit:hover, .reset:hover{
-    background-color: var(--accent-principal-night);
+.submit:hover{
+    background-color: #0F0;
+} 
+
+.reset:hover{
+    background-color: #F00;
 }
 
 
@@ -893,6 +893,114 @@ ul{
 
 
 /*--------------    La résponsivité    -----------*/
+@media (max-width: 881px){
+    .hero{
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .name{
+        font-size: calc(2.8vw + 18px);
+    }
+
+    .article .developpeur{
+        font-size: calc(2.1vw + 18px);
+    }
+
+    .article{
+        width: 90vw;
+    }
+
+    .article p{
+        font-size: calc(2.1vw + 10px);
+    }
+
+    .article div a{
+        margin-top: 3vw;
+        font-size: calc(1.8vw + 10px);
+    }
+
+    .section_titre{
+        font-size: calc(5.1vw + 20px);
+    }
+
+    .grid-container1{
+        grid-template-columns:repeat(auto-fit, minmax(800px, 1fr));
+    }
+
+    .grid-item h2{
+        font-size: calc(2.4vw + 20px);
+    }
+
+    .grid-item li{
+        font-size: calc(2.1vw + 20px);
+    }
+
+    .andrews_alexandro{
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .andrews_alexandro span{
+        font-size: calc(2.8vw + 18px);
+    }
+
+    .andrews_alexandro p{
+        font-size: calc(2.4vw + 18px);
+    }
+
+    .decouverte{
+        font-size: calc(2.4vw + 18px);
+        width: 100%;
+    }
+    
+    .ce_qui_m_anime span, .mon_objectif span{
+        font-size: calc(2.8vw + 18px);
+    }
+
+    .ce_qui_m_anime p, .mon_objectif p{
+        font-size: calc(2.4vw + 18px);
+    }
+
+    .section_propos_item{
+        flex-direction: column;
+        gap: 8vw;
+    }
+
+    .section_propos_item a{
+        font-size: calc(2.8vw + 18px);
+        text-align: center;
+        padding: 2.4vw;
+        padding-inline: 4.1vw;
+        border-radius: 4.8vw;
+        margin-top: 4vw;
+    }
+
+    .formulaire legend{
+        font-size: calc(2.1vw + 20px);
+        padding: 0.5vw;
+        color: var(--jaune);
+    }
+
+    .formulaire input{
+        width: 100%;
+        height: 12vw;
+        font-size: calc(2.1vw + 20px);
+    }
+
+    .formulaire textarea{
+        width: 100%;
+        height: 60vw;
+        font-size: calc(2.1vw + 20px);
+    }
+
+    .formulaire label{
+        font-size: calc(2.6vw + 20px);
+    }
+}
+
+
+
 @media (max-width: 768px) {
     #hamburger{
         display: block;
@@ -907,21 +1015,44 @@ ul{
         gap: 10px;
     }
 
+    picture{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .nom{
+        font-size: calc(2.1vw + 8px);
+    }
+
+    header{
+        padding-block: 4vw;
+    }
+
+    .name{
+        font-size: calc(2.8vw + 18px);
+    }
+
+    .article .developpeur{
+        font-size: calc(2.1vw + 18px);
+    }
+
     .article{
         width: 90vw;
     }
 
-    .formulaire{
-        width: 80vw;
+    .article p{
+        font-size: calc(2.1vw + 10px);
+    }
+
+    .article div a{
+        font-size: calc(1.8vw + 10px);
     }
 
     .formulaire input{
-        height: 6vw;
         border-width: 1px;
     }
 
     .formulaire textarea{
-        height: 12vw;
         border-width: 1px;
     }
 
@@ -931,7 +1062,6 @@ ul{
 
     .projet_info p{
         border-width: 1px;
-        
     }
 
     .projet_button .site{
@@ -945,13 +1075,21 @@ ul{
     .projet_item_grid{
         border-width: 1px;
     }
+
+    .grid-container1{
+        grid-template-columns:repeat(auto-fit, minmax(600px, 1fr));
+    }
     
 }   
 
 @media (max-width: 616px){
-    .grid-item{
-        width: 80%;
-        margin: auto;
+     picture{
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .grid-container1{
+        grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
     }
 
     .projet_item_grid{
