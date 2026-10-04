@@ -87,7 +87,7 @@ header{
     padding-inline: 1.0vw;
     padding-block: 0.4vw;
     text-decoration: none;
-    font-size: calc(1.6vw + 8px);
+    font-size: calc(1.4vw + 8px);
     border-radius: 1.6vw;
     gap: 10px;
     transition: 1s;
@@ -757,27 +757,33 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 2.1vw;
+    gap: 3vw;
 }
 
 
 
 .projet_container_grid{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(600px, 1fr));
     flex-wrap: wrap;
     gap: 2.1vw;
-    padding: 0.8vw;
+    padding: 2vw;
     align-items: stretch;
     justify-content: center;
 }
 
 .projet_item_grid{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 2px solid var(--accent-principal-night);
     border-radius: 1.2vw;
-    width: 40%;
-    height: 24vw;
+    height: 100%;
     align-items: stretch;
+    transition: 2s;
+    overflow: hidden;
+    width: 100%;
 }
 
 .projet_item_grid:hover{
@@ -785,7 +791,6 @@ ul{
 }
 
 .projet_info{
-    position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -802,17 +807,16 @@ ul{
 
 .projet_info span{
     color: var(--jaune);
-    font-size: calc(1.6vw + 3px);
+    font-size: calc(1.6vw + 12px);
 }
 
 .projet_info p{
     color: var(--text-principal-night);
-    font-size: calc(0.8vw + 3px);
+    font-size: calc(1.2vw + 12px);
 }
 
 .projet_container_grid img{
     border: 2px solid var(--accent-principal-night);
-    padding: -1px;
     border-radius: 1.2vw;
     width: 100%;
     height: 100%;
@@ -830,10 +834,11 @@ ul{
     text-decoration: none;
     color: var(--text-principal-night);
     border: 2px solid var(--accent-principal-night);
-    font-size: calc(0.8vw + 3px);
+    font-size: calc(1.2vw + 12px);
     text-align: center;
-    border-radius: 0.4vw; 
-    padding: 0.2vw;
+    border-radius: 6vw; 
+    padding: 1vw;
+    padding-inline: 2vw;
 }
 
 .projet_button .site:hover{
@@ -844,10 +849,11 @@ ul{
     text-decoration: none;
     color: var(--text-principal-night);
     border: 2px solid var(--jaune);
-    font-size: calc(0.8vw + 3px);
+    font-size: calc(1.2vw + 12px);
     text-align: center;
-    border-radius: 0.4vw;
-    padding: 0.2vw;
+    border-radius: 6vw;
+    padding: 1vw;
+    padding-inline: 2vw;
 }
 
 .projet_button .code:hover{
@@ -996,6 +1002,32 @@ ul{
 
     .formulaire label{
         font-size: calc(2.6vw + 20px);
+    }
+
+    .projet_info{
+        gap: 3vw;
+    }
+
+    .projet_info span{
+        font-size: calc(2.4vw + 12px);
+    }
+
+    .projet_info p{
+        font-size: calc(2.1vw + 12px);
+    }
+
+    .projet_button{
+        gap: 8vw;
+    }
+
+    .projet_button .site{
+        font-size: calc(2.1vw + 12px);
+        padding-inline: 4vw;
+    }
+
+    .projet_button .code{
+        font-size: calc(2.1vw + 12px);
+        padding-inline: 4vw;
     }
 }
 
