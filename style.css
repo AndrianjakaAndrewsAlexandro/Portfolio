@@ -15,8 +15,7 @@
     --accent-hover-light: #438bff;
     --text-principal-light: #0A0A0A;
     --text-secondaire-light: #002060;
-    --jaune: rgb(248, 235, 177);
-    --intru: rgb(248, 235, 177)
+    --jaune: rgb(250, 218, 76);
 }
 
 *{
@@ -57,12 +56,12 @@ body{
     transform: scale(1.08);
 }
 
-.ti-sun{
-
+#sun {
+    display: none;
 }
 
-.ti-moon{
-
+#moon {
+    display: block;
 }
 
 /*---------- Just header   ------------*/
@@ -856,7 +855,7 @@ ul{
 .projet_button .code{
     text-decoration: none;
     color: var(--text-principal-light);
-    border: 2px solid var(--accent-principal-light);
+    border: 2px solid var(--jaune);
     font-size: calc(1.2vw + 12px);
     text-align: center;
     border-radius: 6vw;
@@ -865,7 +864,7 @@ ul{
 }
 
 .projet_button .code:hover{
-    background-color: var(--accent-principal-light);
+    background-color: var(--jaune);
     color: var(--fond-principal-light);
 }
 

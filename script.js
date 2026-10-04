@@ -5,6 +5,44 @@
 // });
 
 
+// Le mode
+const sun = document.getElementById("sun");
+const moon = document.getElementById("moon");
+const root = document.documentElement;
+
+
+moon.addEventListener("click", function() {
+    root.style.setProperty("--fond-principal-light", "#0A0A0A");
+    root.style.setProperty("--fond-secondaire-light", "rgb(26, 26, 46)");
+    root.style.setProperty("--accent-principal-light", "#2563EB");
+    root.style.setProperty("--accent-hover-light", "#3B82F6");
+    root.style.setProperty("--text-principal-light", "#FFFFFF");
+    root.style.setProperty("--text-secondaire-light", "#A0A0A0");
+    root.style.setProperty("--jaune", "#FF0");
+
+    moon.style.display = "none";
+    sun.style.display = "block";
+});
+
+sun.addEventListener("click", function() {
+    root.style.setProperty("--fond-principal-light", "#FFFFFF");
+    root.style.setProperty("--fond-secondaire-light", "#FFFFFF");
+    root.style.setProperty("--accent-principal-light", "#438bff");
+    root.style.setProperty("--accent-hover-light", "#438bff");
+    root.style.setProperty("--text-principal-light", "#0A0A0A");
+    root.style.setProperty("--text-secondaire-light", "#002060");
+    root.style.setProperty("--jaune", "rgb(248, 235, 177)");
+
+    sun.style.display = "none";
+    moon.style.display = "block";
+})
+
+
+
+
+
+
+
 // LE MENU HUMBURGER
 
 const hamburger = document.getElementById("hamburger");
