@@ -370,7 +370,7 @@ ul{
 /*-------   sections   ------*/
 .grid-container1{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 1vw;
@@ -605,6 +605,8 @@ ul{
     align-items: center;
     justify-content: center;
     gap: 2vw;
+    width: 80vw;
+    margin: auto;
 }
 
 .section_contact small{
@@ -625,11 +627,12 @@ ul{
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    padding: 1.4vw;
+    padding: 1vw;
     border-radius: 2.1vw;
     border: 2px solid var(--text-secondaire-light);
     gap: 1.2vw;
     background-color: var(--fond-principal-light);
+    width: 98%;
 }
 
 .info:hover{
@@ -763,7 +766,7 @@ ul{
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 3vw;
+    gap: 4vw;
     margin-top: 4vw;
 }
 
@@ -771,12 +774,13 @@ ul{
 
 .projet_container_grid{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
     flex-wrap: wrap;
     gap: 2.1vw;
     padding: 2vw;
     align-items: stretch;
     justify-content: center;
+    padding-block: 4vw;
 }
 
 .projet_item_grid{
@@ -814,12 +818,12 @@ ul{
 
 .projet_info span{
     color: var(--text-secondaire-light);
-    font-size: calc(1.6vw + 12px);
+    font-size: calc(1.6vw + 8px);
 }
 
 .projet_info p{
     color: var(--text-principal-light);
-    font-size: calc(1.2vw + 12px);
+    font-size: calc(1.2vw + 8px);
 }
 
 .projet_container_grid img{
@@ -1019,20 +1023,22 @@ ul{
     }
 
     .projet_container_grid{
+        padding-block: 6vw;
         gap: 6vw;
     }
 
     .projet_info{
         gap: 3vw;
-        padding: 4vw;
+        padding-inline: 2vw;
+        padding-block: 6vw;
     }
 
     .projet_info span{
-        font-size: calc(2.4vw + 12px);
+        font-size: calc(1.6vw + 10px);
     }
 
     .projet_info p{
-        font-size: calc(2.1vw + 12px);
+        font-size: calc(1.2vw + 10px);
     }
 
     .projet_button{
@@ -1040,12 +1046,12 @@ ul{
     }
 
     .projet_button .site{
-        font-size: calc(2.1vw + 20px);
+        font-size: calc(1.2vw + 8px);
         padding-inline: 8vw;
     }
 
     .projet_button .code{
-        font-size: calc(2.1vw + 20px);
+        font-size: calc(1.2vw + 8px);
         padding-inline: 8vw;
     }
 }
@@ -1139,13 +1145,16 @@ ul{
         grid-template-columns:repeat(auto-fit, minmax(600px, 1fr));
     }
 
+    .projet_container_grid{
+        padding-block: 8vw;
+    }
 
     .projet_info span{
-        font-size: calc(2.4vw + 16px);
+        font-size: calc(1.6vw + 16px);
     }
 
     .projet_info p{
-        font-size: calc(2.1vw + 16px);
+        font-size: calc(1.2vw + 16px);
     }
 
     .projet_button{
@@ -1153,12 +1162,12 @@ ul{
     }
 
     .projet_button .site{
-        font-size: calc(2.1vw + 20px);
+        font-size: calc(2.1vw + 14px);
         padding-inline: 8vw;
     }
 
     .projet_button .code{
-        font-size: calc(2.1vw + 20px);
+        font-size: calc(2.1vw + 14px);
         padding-inline: 8vw;
     }
     
